@@ -17,13 +17,15 @@ Because JS module formats and ES features are all over the place and are unlikel
 There are some existing React library boilerplates, but none of them fulfilled the following goals which we set out to accomplish:
 
 - Support all modern JS language features for component development out of the box
-- Build process to transpile component to `umd` and `es` module formats for publishing to npm
+- Build process to compile component to `umd` and `es` module formats (transpiled to ES2015) for publishing to npm
 - Comes with an `example` app using a standard [create-react-app](https://github.com/facebookincubator/create-react-app), serving 2 purposes
-  - A local, hot-reload dev project while developing and iterating on your component
-  - Easily publishable to github pages so users can play with the example up front (same goes for any alternative static hosting providers such as [surge.sh](http://surge.sh/) or [now.sh](https://zeit.co/now))
-- Use [Rollup](https://rollupjs.org/) for build process and [Babel](https://babeljs.io/) for transpilation.
+  - A local, hot-reload dev project while developing and iterating on your module
+  - Easily publishable to *github pages* so users can quickly play with a hosted version of the module (same goes for any alternative static hosting providers such as [surge.sh](http://surge.sh/) or [now.sh](https://zeit.co/now))
+- Use [Rollup](https://rollupjs.org/) for build process and [Babel](https://babeljs.io/) for transpilation
   - See the FAQ below for an explanation of Rollup vs Webpack
 - Easily allow the use of `npm` modules within your library, either as hard dependencies or external, peer dependencies
+- Support importing CSS in your module with no extra setup
+  - Note that this support will just be a noop if you're using a css-in-js approach
 - Thorough documentation written by someone who cares :heart_eyes:
 
 ## Walkthrough
@@ -101,7 +103,17 @@ We recommend adding a link to the resulting github pages example to your README.
 
 ## FAQ
 
-TODO
+### Why use Rollup over Webpack?
+
+For a thorough explanation, I recommend reading Rich Harris' excellent breakdown article [Webpack and Rollup: the same bug different](https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058c)
+
+### Why use create-react-app for the example?
+
+[create-react-app](https://github.com/facebookincubator/create-react-app) has become a standard that nearly every react developer can understand and easily work with. Its internal choices and design represent a great deal of collaboration amongst many of the best develelopers in the React community. We feel that taking advantage of such a standardized application framework is the simplest way to create an example app that both acts as a development vehicle while iterating on your module locally as well as being easily publishable as an example showcase for users to quickly test your component out.
+
+### Where are the tests?
+
+There're missing because I'm lazy :grimacing:, and I believe it's more difficult to standardize boilerplate for testing with the number of different toolchains that exist surrounding it. That being said, feel free to submit a PR and I'd be happy to add some standardized testing to the boilerplate.
 
 ## React modules built with this boilerplate
 
