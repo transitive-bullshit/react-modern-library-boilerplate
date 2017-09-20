@@ -6,6 +6,8 @@
 
 ## Intro
 
+*Note*: Modern means modern as of September 20, 2017.. I'm sure everything'll change in a month... :joy: :joy:
+
 Publishing an open source React / Preact component or library to `npm` can be very rewarding, but getting started with the required machinery is still a more daunting task than it should be, especially compared with the relatively easy process of creating a React *app* via [create-react-app](https://github.com/facebookincubator/create-react-app) or [create-preact-app](https://github.com/just-boris/create-preact-app).
 
 Because JS module formats and ES features are all over the place and are unlikely to be normalized anytime soon, npm modules must support both the lowest common denominator format (commonjs) as well as modern ES6 modules without relying on commonplace language features like JSX and class properties that most of the React community takes for granted. For this reason, it's pretty difficult to take a component you've written for an app and publish it directly to npm.
