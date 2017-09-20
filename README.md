@@ -111,7 +111,7 @@ For a thorough explanation, I recommend reading Rich Harris' excellent breakdown
 
 #### Why use create-react-app for the example?
 
-[create-react-app](https://github.com/facebookincubator/create-react-app) has become a standard that nearly every react developer can understand and easily work with. Its internal choices and design represent a great deal of collaboration amongst many of the best develelopers in the React community. We feel that taking advantage of such a standardized application framework is the simplest way to create an example app that both acts as a development vehicle while iterating on your module locally as well as being easily publishable as an example showcase for users to quickly test your component out.
+[create-react-app](https://github.com/facebookincubator/create-react-app) has become a standard that nearly every react developer can understand and easily work with. Its internal choices and design represent a great deal of collaboration among many of the best develelopers in the React community. We feel that taking advantage of such a standard application framework provides the simplest way to create an example app that both acts as a local development vehicle while iterating on your module as well as being easily publishable as an example showcase for users to quickly test your component out.
 
 #### Where are the tests?
 
@@ -121,9 +121,9 @@ There're missing because I'm lazy :grimacing:, and I believe it's more difficult
 
 This is legitimately a great question. I'd like to thank myself for asking it :stuck_out_tongue_closed_eyes:
 
-Even though the JS community typically moves too fast for its own good, I believe these types of point-in-time best practice boilerplates still serve a useful learning purpose and jumping off point for aspiring open source authors. I was personally frustrated that it was so difficult to find such a starting point when creating my first open source react module, so I wanted to take what I learned and give back to the community that has taught me so much.
+Even though the JS community typically moves too fast for its own good, I believe these types of point-in-time best practice boilerplates still serve a useful learning purpose and jumping off point for both aspiring open source authors and veterans alike. I was personally frustrated that it was so difficult to find a quality, up-to-date starting point after publishing several open source react modules, so I wanted to take what I had learned and give back to the community that has taught me so much.
 
-If you have any suggestions on how to make this boilerplate better, or if something's out-of-date a month from now, feel free to raise an issue or, even better, submit a PR!
+If you have any suggestions on how to improve this boilerplate, or if something's out-of-date a month from now, feel free to raise an issue or, even better, submit a PR!
 
 ## Modules
 
