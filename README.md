@@ -56,7 +56,7 @@ We'll also be running our `example/` create-react-app that's linked to the local
 
 ```bash
 # run example to start developing your new component against
-npm link
+npm link # the link commands are important for local development
 npm install
 npm start # runs rollup with watch flag
 
