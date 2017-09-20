@@ -19,7 +19,7 @@ Because JS module formats and ES features are all over the place and are unlikel
 There are some existing React library boilerplates, but none of them fulfilled the following goals which we set out to accomplish:
 
 - Support all modern JS language features for component development out of the box
-- Build process to compile component to `umd` and `es` module formats (transpiled to ES2015) for publishing to npm
+- Build process to compile component to `umd` and `es` module formats for publishing to npm
 - Comes with an `example` app using a standard [create-react-app](https://github.com/facebookincubator/create-react-app), serving 2 purposes
   - A local, hot-reload dev project while developing and iterating on your module
   - Easily publishable to *github pages* so users can quickly play with a hosted version of the module (same goes for any alternative static hosting providers such as [surge.sh](http://surge.sh/) or [now.sh](https://zeit.co/now))
