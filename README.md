@@ -22,7 +22,7 @@ There are some existing React library boilerplates, but none of them fulfilled t
 - Build process to source to `umd` and `es` module formats for publishing to npm
 - Comes with an `example` app using a standard [create-react-app](https://github.com/facebookincubator/create-react-app), serving 2 purposes
   - Local, hot-reload server for developing your module
-  - Easily publishable to *github pages* so users can quickly play with your module (same goes for any alternative static hosting providers such as [surge.sh](http://surge.sh/) or [now.sh](https://zeit.co/now))
+  - Easily publishable to *github pages* so users can quickly play with your module (or [surge.sh](http://surge.sh/) or [now.sh](https://zeit.co/now))
 - Use [Rollup](https://rollupjs.org/) for build process and [Babel](https://babeljs.io/) for transpilation
   - See the FAQ below for an explanation of Rollup vs Webpack
 - Allow the use of `npm` modules within your library, either as dependencies or peer-dependencies
