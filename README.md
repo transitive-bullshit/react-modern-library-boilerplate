@@ -8,7 +8,7 @@
 
 *Note*: Modern means modern as of September 20, 2017.. I'm sure everything will change in a month... :joy: :joy:
 
-Publishing an open source React / Preact component or library to `npm` can be very rewarding, but getting started with the required machinery is still a more daunting task than it should be, especially compared to the relatively easy process of creating a React app via [create-react-app](https://github.com/facebookincubator/create-react-app) or [create-preact-app](https://github.com/just-boris/create-preact-app).
+Publishing an open source React / Preact component or library to `npm` can be very rewarding, but getting started with the required machinery is still more daunting than it should be, especially compared to the relatively easy process of creating a React app via [create-react-app](https://github.com/facebookincubator/create-react-app) or [create-preact-app](https://github.com/just-boris/create-preact-app).
 
 Because JS module formats and ES features are all over the place and are unlikely to be normalized anytime soon, npm modules must support both the lowest common denominator format (commonjs) as well as modern ES6 modules without relying on *commonplace* language features like JSX and class properties that most of the React community takes for granted. For this reason, it's pretty difficult to take a component you've written for an app and publish it directly to npm.
 
@@ -19,7 +19,7 @@ Because JS module formats and ES features are all over the place and are unlikel
 There are some existing React library boilerplates, but none of them fulfilled the following goals which we set out to accomplish:
 
 - Support all modern JS language features for component development out of the box
-- Build process to source to `umd` and `es` module formats for publishing to npm
+- Build process to convert source to `umd` and `es` module formats for publishing to npm
 - Comes with an `example` app using a standard [create-react-app](https://github.com/facebookincubator/create-react-app), serving 2 purposes
   - Local, hot-reload server for developing your module
   - Easily publishable to *github pages* so users can quickly play with your module (or [surge.sh](http://surge.sh/) or [now.sh](https://zeit.co/now))
@@ -96,7 +96,7 @@ When you're ready to publish your component to **npm**, follow this checklist an
 - add any npm modules you want as peer dependencies to the `external` array in `rollup.config.js`
 
 ```bash
-# note this will also build `commonjs` and `es`versions of your 
+# note this will build `commonjs` and `es`versions of your module to dist/
 npm publish
 ```
 
