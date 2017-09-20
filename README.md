@@ -12,7 +12,7 @@ Publishing an open source React / Preact component or library to `npm` can be ve
 
 Because JS module formats and ES features are all over the place and are unlikely to be normalized anytime soon, npm modules must support both the lowest common denominator format (commonjs) as well as modern ES6 modules without relying on *commonplace* language features like JSX and class properties that most of the React community takes for granted. For this reason, it's pretty difficult to take a component you've written for an app and publish it directly to npm.
 
-**The purpose of this boilerplate is to make the publishing your own React components as simple as possible.**
+**The purpose of this boilerplate is to make publishing your own React components as simple as possible.**
 
 ## Features
 
