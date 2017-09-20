@@ -10,7 +10,7 @@ Publishing an open source React / Preact component or library to `npm` can be ve
 
 Because JS module formats and ES features are all over the place and are unlikely to be normalized anytime soon, npm modules must support both the lowest common denominator format (commonjs) as well as modern ES6 modules without relying on commonplace language features like JSX and class properties that most of the React community takes for granted. For this reason, it's pretty difficult to take a component you've written for an app and publish it directly to npm.
 
-**The purpose of this boilerplate is to make the process of publishing your own React library or component modules as simple as possible.**
+**The purpose of this boilerplate is to make the process of publishing your own React library or component module as simple and up-to-date as possible.**
 
 ## Features
 
@@ -105,7 +105,7 @@ We recommend adding a link to the resulting github pages example to your README.
 
 ### Why use Rollup over Webpack?
 
-For a thorough explanation, I recommend reading Rich Harris' excellent breakdown article [Webpack and Rollup: the same bug different](https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058c)
+For a thorough explanation, I recommend reading Rich Harris' excellent breakdown article [Webpack and Rollup: the same bug different](https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058c). In short, the majority of the community now favors using Rollup for libraries and Webpack for apps.
 
 ### Why use create-react-app for the example?
 
@@ -115,7 +115,9 @@ For a thorough explanation, I recommend reading Rich Harris' excellent breakdown
 
 There're missing because I'm lazy :grimacing:, and I believe it's more difficult to standardize boilerplate for testing with the number of different toolchains that exist surrounding it. That being said, feel free to submit a PR and I'd be happy to add some standardized testing to the boilerplate.
 
-## React modules built with this boilerplate
+## Modules
+
+Here's a list of modules created from this boilerplate.
 
 - [react-background-slideshow](https://github.com/transitive-bullshit/react-background-slideshow)
 - Yours (submit a PR!)
