@@ -67,7 +67,7 @@ npm install
 npm start # runs create-react-app hot-reload dev server
 ```
 
-Now, anytime you make a change to your component in `src/` or to the demo application's `demo/src`, `create-react-app` will live-reload your local dev server so you can iterate on your comnponent in real-time.
+Now, anytime you make a change to your component in `src/` or to the example application's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your comnponent in real-time.
 
 When you're ready to push your component for the first time to **github**, make sure you've customized the following files and then follow the normal steps for creating a github repo:
 
