@@ -17,15 +17,18 @@ There are some existing React library boilerplates, but none of them fulfilled t
 - Support all modern JS language features for component development out of the box
 - Build process to transpile component to `umd` and `es` module formats for publishing to npm
 - Comes with an `example` app using a standard [create-react-app](https://github.com/facebookincubator/create-react-app), serving 2 purposes
-  - Serve as a local, hot-reload dev project while developing and iterating on your component
-  - Be easily publishable to github pages so users can play with the example up front (same goes for any alternative static hosting providers such as [surge.sh](http://surge.sh/) or [now.sh](https://zeit.co/now))
+  - A local, hot-reload dev project while developing and iterating on your component
+  - Easily publishable to github pages so users can play with the example up front (same goes for any alternative static hosting providers such as [surge.sh](http://surge.sh/) or [now.sh](https://zeit.co/now))
 - Use [Rollup](https://rollupjs.org/) for build process and [Babel](https://babeljs.io/) for transpilation.
   - See the FAQ below for an explanation of Rollup vs Webpack
+- Easily allow the use of `npm` modules within your library, either as hard dependencies or external, peer dependencies
 - Thorough documentation written by someone who cares :heart_eyes:
 
 ## Walkthrough
 
-In order to use this boilerplate, you'll want to customize a cloned version. Let's walk through an example by creating an npm module called `react-poop-emoji` that exposes a single component, `PoopEmoji`. We'll assume an example github username of `github-haxor`, where your github username is used for specifying the repository and github pages-hosted example.
+In order to use this boilerplate, you'll want to customize a cloned version. Don't worry if this walkthrough seems complicated, as it's meant to be very verbose.
+
+Let's walk through an example by creating an npm module called `react-poop-emoji` that exposes a single component, `PoopEmoji` :poop:. We'll assume an example github username of `github-haxor`, where your github username is used for specifying the repository and github pages-hosted example.
 
 ```bash
 # clone and rename base boilerplate repo
@@ -39,16 +42,23 @@ rm -rf .git
 mv README.template.md README.md
 sed -i 's/react-modern-library-boilerplate/react-poop-emoji/g' *.{json,md} src/*.js example/*.json example/src/*.js example/public/*.{html,json}
 sed -i 's/transitive-bullshit/github-haxor/g' package.json example/package.json
+```
 
+Now you're ready to run a local version of rollup that will watch your `src/` component and automatically recompile it into `dist/` whenever you make changes.
+
+We'll also be running our `example/` create-react-app that's linked to the local version of your `react-poop-emoji` module.
+
+```bash
 # run example to start developing your new component against
 npm link
 npm install
-npm start
+npm start # runs rollup with watch flag
+
 # (in another tab, run the example create-react-app)
 cd example
 npm link react-poop-emoji
 npm install
-npm start
+npm start # runs create-react-app hot-reload dev server
 ```
 
 Now, anytime you make a change to your component in `src/` or to the demo application's `demo/src`, `create-react-app` will live-reload your local dev server so you can iterate on your comnponent in real-time.
