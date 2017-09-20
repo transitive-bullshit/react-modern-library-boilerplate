@@ -34,6 +34,9 @@ There are some existing React library boilerplates, but none of them fulfilled t
 
 In order to use this boilerplate, we recommend following this walkthrough. Don't worry if this guide seems complicated, as it's meant to be very verbose.
 
+
+#### Getting Started
+
 Let's walk through the steps you'd take to create an example npm module called `react-poop-emoji` that exposes a single component, `PoopEmoji` :poop:. We'll assume an example github username of `github-haxor`, where your github username will be used for specifying the repository in package.json and resolving the example github pages deployment.
 
 ```bash
@@ -49,6 +52,8 @@ mv README.template.md README.md
 sed -i 's/react-modern-library-boilerplate/react-poop-emoji/g' *.{json,md} src/*.js example/*.json example/src/*.js example/public/*.{html,json}
 sed -i 's/transitive-bullshit/github-haxor/g' package.json example/package.json
 ```
+
+#### Local Development
 
 Now you're ready to run a local version of rollup that will watch your `src/` component and automatically recompile it into `dist/` whenever you make changes.
 
@@ -69,6 +74,8 @@ npm start # runs create-react-app hot-reload dev server
 
 Now, anytime you make a change to your component in `src/` or to the example application's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your comnponent in real-time.
 
+#### Git Stuffs
+
 When you're ready to push your component for the first time to **github**, make sure you've customized the following files and then follow the normal steps for creating a github repo:
 
 - edit `README.md`
@@ -82,6 +89,8 @@ git commit -am "init"
 # add git remote and push to remote gitub repo
 ```
 
+#### NPM Stuffs
+
 When you're ready to publish your component to **npm**, follow this checklist and then follow the normal steps to publish an npm module:
 
 - add any npm modules you want as peer dependencies to the `external` array in `rollup.config.js`
@@ -90,6 +99,8 @@ When you're ready to publish your component to **npm**, follow this checklist an
 # note this will also build `commonjs` and `es`versions of your 
 npm publish
 ```
+
+#### Github Pages
 
 And finally, we recommend deploying your example to github pages so your users can quickly play around with a live version of your library before installing it.
 
