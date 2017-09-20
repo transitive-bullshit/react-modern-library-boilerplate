@@ -6,7 +6,7 @@
 
 ## Intro
 
-*Note*: Modern means modern as of September 20, 2017.. I'm sure everything'll change in a month... :joy: :joy:
+*Note*: Modern means modern as of September 20, 2017.. I'm sure everything will change in a month... :joy: :joy:
 
 Publishing an open source React / Preact component or library to `npm` can be very rewarding, but getting started with the required machinery is still a more daunting task than it should be, especially compared with the relatively easy process of creating a React *app* via [create-react-app](https://github.com/facebookincubator/create-react-app) or [create-preact-app](https://github.com/just-boris/create-preact-app).
 
@@ -105,17 +105,25 @@ We recommend adding a link to the resulting github pages example to your README.
 
 ## FAQ
 
-### Why use Rollup over Webpack?
+#### Why use Rollup over Webpack?
 
 For a thorough explanation, I recommend reading Rich Harris' excellent breakdown article [Webpack and Rollup: the same bug different](https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058c). In short, the majority of the community now favors using Rollup for libraries and Webpack for apps.
 
-### Why use create-react-app for the example?
+#### Why use create-react-app for the example?
 
 [create-react-app](https://github.com/facebookincubator/create-react-app) has become a standard that nearly every react developer can understand and easily work with. Its internal choices and design represent a great deal of collaboration amongst many of the best develelopers in the React community. We feel that taking advantage of such a standardized application framework is the simplest way to create an example app that both acts as a development vehicle while iterating on your module locally as well as being easily publishable as an example showcase for users to quickly test your component out.
 
-### Where are the tests?
+#### Where are the tests?
 
 There're missing because I'm lazy :grimacing:, and I believe it's more difficult to standardize boilerplate for testing with the number of different toolchains that exist surrounding it. That being said, feel free to submit a PR and I'd be happy to add some standardized testing to the boilerplate.
+
+#### What's the purpose of creating boilerplate? Won't it be outdated in a month?
+
+This is legitimately a great question. I'd like to thank myself for asking it :stuck_out_tongue_closed_eyes:
+
+Even though the JS community typically moves too fast for its own good, I believe these types of point-in-time best practice boilerplates still serve a useful learning purpose and jumping off point for aspiring open source authors. I was personally frustrated that it was so difficult to find such a starting point when creating my first open source react module, so I wanted to take what I learned and give back to the community that has taught me so much.
+
+If you have any suggestions on how to make this boilerplate better, or if something's out-of-date a month from now, feel free to raise an issue or, even better, submit a PR!
 
 ## Modules
 
