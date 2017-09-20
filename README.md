@@ -34,7 +34,6 @@ There are some existing React library boilerplates, but none of them fulfilled t
 
 In order to use this boilerplate, we recommend following this walkthrough. Don't worry if this guide seems complicated, as it's meant to be very verbose.
 
-
 #### Getting Started
 
 Let's walk through the steps you'd take to create an example npm module called `react-poop-emoji` that exposes a single component, `PoopEmoji` :poop:. We'll assume an example github username of `github-haxor`, where your github username will be used for specifying the repository in package.json and resolving the example github pages deployment.
