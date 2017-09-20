@@ -121,7 +121,7 @@ For a thorough explanation, I recommend reading Rich Harris' excellent breakdown
 
 #### Why use create-react-app for the example?
 
-[create-react-app](https://github.com/facebookincubator/create-react-app) has become a standard that nearly every react developer can understand and easily work with. Its internal choices and design represent a great deal of collaboration among many of the best develelopers in the React community. We feel that taking advantage of such a standard application framework provides the simplest way to create an example app that both acts as a local development vehicle while iterating on your module as well as being easily publishable as an example showcase for users to quickly test your component out.
+[create-react-app](https://github.com/facebookincubator/create-react-app) has become a standard that nearly every react developer is familiar with. Its internal design choices and tradeoffs represent a great deal of collaboration among many of the best develelopers in the React community. We feel that by taking advantage of such a standard application framework, module authors can provides the simplest possible example app that both acts as a mature, local development vehicle while iterating on your module as well as being easily publishable as an example showcase.
 
 #### Where are the tests?
 
