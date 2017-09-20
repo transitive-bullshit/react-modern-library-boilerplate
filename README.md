@@ -19,15 +19,15 @@ Because JS module formats and ES features are all over the place and are unlikel
 There are some existing React library boilerplates, but none of them fulfilled the following goals which we set out to accomplish:
 
 - Support all modern JS language features for component development out of the box
-- Build process to compile component to `umd` and `es` module formats for publishing to npm
+- Build process to source to `umd` and `es` module formats for publishing to npm
 - Comes with an `example` app using a standard [create-react-app](https://github.com/facebookincubator/create-react-app), serving 2 purposes
-  - A local, hot-reload dev project while developing and iterating on your module
-  - Easily publishable to *github pages* so users can quickly play with a hosted version of the module (same goes for any alternative static hosting providers such as [surge.sh](http://surge.sh/) or [now.sh](https://zeit.co/now))
+  - Local, hot-reload server for developing your module
+  - Easily publishable to *github pages* so users can quickly play with your module (same goes for any alternative static hosting providers such as [surge.sh](http://surge.sh/) or [now.sh](https://zeit.co/now))
 - Use [Rollup](https://rollupjs.org/) for build process and [Babel](https://babeljs.io/) for transpilation
   - See the FAQ below for an explanation of Rollup vs Webpack
-- Easily allow the use of `npm` modules within your library, either as hard dependencies or external, peer dependencies
-- Support importing CSS in your module with no extra setup
-  - Note that this support will just be a noop if you're using a css-in-js approach
+- Allow the use of `npm` modules within your library, either as dependencies or peer-dependencies
+- Support importing CSS in your module
+  - Note that CSS support will be a noop if you're using css-in-js
 - Thorough documentation written by someone who cares :heart_eyes:
 
 ## Walkthrough
