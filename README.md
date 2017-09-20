@@ -10,9 +10,9 @@
 
 Publishing an open source React / Preact component or library to `npm` can be very rewarding, but getting started with the required machinery is still a more daunting task than it should be, especially compared to the relatively easy process of creating a React app via [create-react-app](https://github.com/facebookincubator/create-react-app) or [create-preact-app](https://github.com/just-boris/create-preact-app).
 
-Because JS module formats and ES features are all over the place and are unlikely to be normalized anytime soon, npm modules must support both the lowest common denominator format (commonjs) as well as modern ES6 modules without relying on commonplace language features like JSX and class properties that most of the React community takes for granted. For this reason, it's pretty difficult to take a component you've written for an app and publish it directly to npm.
+Because JS module formats and ES features are all over the place and are unlikely to be normalized anytime soon, npm modules must support both the lowest common denominator format (commonjs) as well as modern ES6 modules without relying on *commonplace* language features like JSX and class properties that most of the React community takes for granted. For this reason, it's pretty difficult to take a component you've written for an app and publish it directly to npm.
 
-**The purpose of this boilerplate is to make the process of publishing your own React library or component module as simple and up-to-date as possible.**
+**The purpose of this boilerplate is to make the process of publishing your own React library or component module as simple as possible.**
 
 ## Features
 
