@@ -1,6 +1,6 @@
 # react-modern-library-boilerplate
 
-> Boilerplate for publishing modern React modules with Rollup.
+> Boilerplate for publishing modern React modules with Rollup and example usage via create-react-app.
 
 [![NPM](https://img.shields.io/npm/v/react-modern-library-boilerplate.svg)](https://www.npmjs.com/package/react-modern-library-boilerplate) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -11,6 +11,8 @@ Publishing an open source React / Preact component or library to `npm` can be ve
 Because JS module formats and ES features are all over the place and are unlikely to be normalized anytime soon, npm modules must support both the lowest common denominator format (commonjs) as well as modern ES6 modules without relying on commonplace language features like JSX and class properties that most of the React community takes for granted. For this reason, it's pretty difficult to take a component you've written for an app and publish it directly to npm.
 
 **The purpose of this boilerplate is to make the process of publishing your own React library or component modules as simple as possible.**
+
+## Features
 
 There are some existing React library boilerplates, but none of them fulfilled the following goals which we set out to accomplish:
 
@@ -26,9 +28,9 @@ There are some existing React library boilerplates, but none of them fulfilled t
 
 ## Walkthrough
 
-In order to use this boilerplate, you'll want to customize a cloned version. Don't worry if this walkthrough seems complicated, as it's meant to be very verbose.
+In order to use this boilerplate, we recommend following this walkthrough. Don't worry if this guide seems complicated, as it's meant to be very verbose.
 
-Let's walk through an example by creating an npm module called `react-poop-emoji` that exposes a single component, `PoopEmoji` :poop:. We'll assume an example github username of `github-haxor`, where your github username is used for specifying the repository and github pages-hosted example.
+Let's walk through the steps you'd take to create an example npm module called `react-poop-emoji` that exposes a single component, `PoopEmoji` :poop:. We'll assume an example github username of `github-haxor`, where your github username will be used for specifying the repository in package.json and resolving the example github pages deployment.
 
 ```bash
 # clone and rename base boilerplate repo
@@ -69,8 +71,6 @@ When you're ready to push your component for the first time to **github**, make 
 - edit `package.json`
 
 ```bash
-# prerequisites
-
 # push to remote git repo
 git init
 git add *
