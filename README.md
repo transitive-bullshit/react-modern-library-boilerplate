@@ -45,7 +45,7 @@ mv react-modern-library-boilerplate react-poop-emoji
 cd react-poop-emoji
 rm -rf .git
 
-# replace boilerplate placeholers with your module-specific values
+# replace boilerplate placeholders with your module-specific values
 # NOTE: feel free to use your favorite find & replace method instead of sed
 mv README.template.md README.md
 sed -i 's/react-modern-library-boilerplate/react-poop-emoji/g' *.{json,md} src/*.js example/*.json example/src/*.js example/public/*.{html,json}
