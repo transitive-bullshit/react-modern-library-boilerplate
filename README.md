@@ -117,7 +117,7 @@ We recommend adding a link to the resulting github pages example to your README.
 
 #### Why use Rollup over Webpack?
 
-For a thorough explanation, I recommend reading Rich Harris' excellent breakdown article [Webpack and Rollup: the same bug different](https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058c). In short, the majority of the community now favors using Rollup for libraries and Webpack for apps.
+For a deeper explanation, I recommend reading Rich Harris' article [Webpack and Rollup: the same but different](https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058c). In short, the majority of the community now favors using Rollup for libraries and Webpack for apps.
 
 #### Why use create-react-app for the example?
 
