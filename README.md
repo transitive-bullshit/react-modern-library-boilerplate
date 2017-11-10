@@ -8,7 +8,7 @@
 
 *Note*: Modern means modern as of November, 2017.. I'm sure everything will change in a month... :joy: :joy:
 
-Check out the accompany [blog post](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7) for more background on this repo, including 
+Check out the accompany [blog post](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7) for background and a usage guide on this boilerplate.
 
 **The purpose of this boilerplate is to make publishing your own React components as simple as possible.**
 
