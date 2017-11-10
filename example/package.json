@@ -5,6 +5,7 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
+    "prop-types": "^15.4.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-modern-library-boilerplate": "^1.0.0",
