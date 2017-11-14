@@ -18,7 +18,7 @@ export default class ExampleComponent extends Component {
     } = this.props
 
     return (
-      <div>
+      <div className='test'>
         Example Component: {text}
       </div>
     )
