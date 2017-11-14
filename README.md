@@ -30,7 +30,7 @@ There are some existing React library boilerplates, but none of them fulfilled t
 
 ## Walkthrough
 
-Check out the accompanying [blog post](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7) which walks through an in-depth example of how to create an example component using this boilerplate.
+Check out the accompanying [blog post](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7) which gives more in-depth explanations on how to create an example component using this boilerplate.
 
 On this page, we'll give a quick rundown of the essential steps.
 
@@ -38,14 +38,15 @@ On this page, we'll give a quick rundown of the essential steps.
 
 The first step is to clone this repo and rename / replace all boilerplate names to match your custom module. In this example, we'll be creating a module named `react-poop-emoji`.
 
-Example:
 ```bash
 # clone and rename base boilerplate repo
 git clone https://github.com/transitive-bullshit/react-modern-library-boilerplate.git
 mv react-modern-library-boilerplate react-poop-emoji
 cd react-poop-emoji
 rm -rf .git
+```
 
+```bash
 # replace boilerplate placeholders with your module-specific values
 # NOTE: feel free to use your favorite find & replace method instead of sed
 mv README.template.md README.md
@@ -57,45 +58,28 @@ sed -i 's/transitive-bullshit/your-github-username/g' package.json example/packa
 
 Now you're ready to run a local version of rollup that will watch your `src/` component and automatically recompile it into `dist/` whenever you make changes.
 
-We'll also be running our `example/` create-react-app that's linked to the local version of your `react-poop-emoji` module.
-
-**NOTE**: it's very important to `npm link` your local module while developing it so your example create-react-app will load the local, development version.
-
 ```bash
 # run example to start developing your new component against
 npm link # the link commands are important for local development
 npm install # disregard any warnings about missing peer dependencies
 npm start # runs rollup with watch flag
+```
 
-# (in another tab, run the example create-react-app)
+We'll also be running our `example/` create-react-app that's linked to the local version of your `react-poop-emoji` module.
+
+```bash
+# (in another tab)
 cd example
 npm link react-poop-emoji
 npm install
-npm start # runs create-react-app hot-reload dev server
+npm start # runs create-react-app dev server
 ```
 
-Now, anytime you make a change to your component in `src/` or to the example application's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your component in real-time.
-
-#### Git Stuffs
-
-When you're ready to push your component for the first time to **github**, make sure you've customized the following files and then follow the normal steps for creating a github repo:
-
-- edit `README.md`
-- edit `package.json`
-
-```bash
-# push to remote git repo
-git init
-git add *
-git commit -am "init"
-# add git remote and push to remote github repo
-```
+Now, anytime you make a change to your component in `src/` or to the example app's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your component in real-time.
 
 #### NPM Stuffs
 
-When you're ready to publish your component to **npm**, follow this checklist and then follow the normal steps to publish an npm module:
-
-- add any npm modules you want as peer dependencies to the `external` array in `rollup.config.js`
+The only difference when publishing your component to **npm** is to make sure you add any npm modules you want as peer dependencies to the `external` array in `rollup.config.js`. Then publish as per usual.
 
 ```bash
 # note this will build `commonjs` and `es`versions of your module to dist/
@@ -104,9 +88,7 @@ npm publish
 
 #### Github Pages
 
-And finally, we recommend deploying your example to github pages so your users can quickly play around with a live version of your library before installing it.
-
-Deploying to github pages is simple. We create a production build of our example `create-react-app` that showcases your library and then run `gh-pages` to deploy the resulting bundle. This can be done as follows:
+Deploying the example to github pages is simple. We create a production build of our example `create-react-app` that showcases your library and then run `gh-pages` to deploy the resulting bundle. This can be done as follows:
 
 ```bash
 npm run deploy
