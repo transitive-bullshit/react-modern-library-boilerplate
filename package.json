@@ -1,6 +1,6 @@
 {
   "name": "react-modern-library-boilerplate",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Boilerplate for publishing modern React modules with Rollup",
   "author": "Travis Fischer",
   "license": "MIT",

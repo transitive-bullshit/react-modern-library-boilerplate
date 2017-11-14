@@ -8,7 +8,7 @@
 
 *Note*: Modern means modern as of November, 2017.. I'm sure everything will change in a month... :joy: :joy:
 
-Check out the accompany [blog post](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7) for background and a usage guide on this boilerplate.
+Introductory [blog post](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
 
 **The purpose of this boilerplate is to make publishing your own React components as simple as possible.**
 
@@ -32,33 +32,89 @@ There are some existing React library boilerplates, but none of them fulfilled t
 
 Check out the accompanying [blog post](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7) which walks through an in-depth example of how to create an example component using this boilerplate.
 
-## FAQ
+On this page, we'll give a quick rundown of the essential steps.
 
-#### Why use Rollup over Webpack?
+#### Getting Started
 
-For a deeper explanation, I recommend reading Rich Harris' article [Webpack and Rollup: the same but different](https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058c). In short, the majority of the community now favors using Rollup for libraries and Webpack for apps.
+The first step is to clone this repo and rename / replace all boilerplate names to match your custom module. In this example, we'll be creating a module named `react-poop-emoji`.
 
-#### Why use create-react-app for the example?
+Example:
+```bash
+# clone and rename base boilerplate repo
+git clone https://github.com/transitive-bullshit/react-modern-library-boilerplate.git
+mv react-modern-library-boilerplate react-poop-emoji
+cd react-poop-emoji
+rm -rf .git
 
-[create-react-app](https://github.com/facebookincubator/create-react-app) has become a standard that nearly every react developer is familiar with. Its internal design choices and tradeoffs represent a great deal of collaboration among many of the best developers in the React community. We feel that by taking advantage of such a standard application framework, module authors can provide the simplest possible example app that both acts as a mature, local development vehicle while iterating on your module as well as being easily publishable as an example showcase.
+# replace boilerplate placeholders with your module-specific values
+# NOTE: feel free to use your favorite find & replace method instead of sed
+mv README.template.md README.md
+sed -i 's/react-modern-library-boilerplate/react-poop-emoji/g' *.{json,md} src/*.js example/*.json example/src/*.js example/public/*.{html,json}
+sed -i 's/transitive-bullshit/your-github-username/g' package.json example/package.json
+```
 
-#### Where are the tests?
+#### Local Development
 
-I recommend that you piggyback off of create-react-app’s built-in test harness setup for testing your library. That being said, feel free to submit a PR and I’d be happy to add some separate, standardized testing to the boilerplate.
+Now you're ready to run a local version of rollup that will watch your `src/` component and automatically recompile it into `dist/` whenever you make changes.
 
-#### What's the purpose of creating boilerplate? Won't it be outdated in a month?
+We'll also be running our `example/` create-react-app that's linked to the local version of your `react-poop-emoji` module.
 
-This is legitimately a great question. I'd like to thank myself for asking it :stuck_out_tongue_closed_eyes:
+**NOTE**: it's very important to `npm link` your local module while developing it so your example create-react-app will load the local, development version.
 
-Even though the JS community typically moves too fast for its own good, I believe these types of point-in-time best practice boilerplates still serve a useful learning purpose and jumping off point for both aspiring open source authors and veterans alike. I was personally frustrated that it was so difficult to find a quality, up-to-date starting point after publishing several open source react modules, so I wanted to take what I had learned and give back to the community that has taught me so much.
+```bash
+# run example to start developing your new component against
+npm link # the link commands are important for local development
+npm install # disregard any warnings about missing peer dependencies
+npm start # runs rollup with watch flag
 
-If you have any suggestions on how to improve this boilerplate, or if something's out-of-date a month from now, feel free to raise an issue or, even better, submit a PR!
+# (in another tab, run the example create-react-app)
+cd example
+npm link react-poop-emoji
+npm install
+npm start # runs create-react-app hot-reload dev server
+```
 
-#### How can I use use Typescript in my components?
+Now, anytime you make a change to your component in `src/` or to the example application's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your component in real-time.
 
-Rollup has excellent Typescript support. For details on how to integrate Typescript with this boilerplate, see this [issue](https://github.com/transitive-bullshit/react-modern-library-boilerplate/issues/1).
+#### Git Stuffs
 
-#### What does a published module look like?
+When you're ready to push your component for the first time to **github**, make sure you've customized the following files and then follow the normal steps for creating a github repo:
+
+- edit `README.md`
+- edit `package.json`
+
+```bash
+# push to remote git repo
+git init
+git add *
+git commit -am "init"
+# add git remote and push to remote github repo
+```
+
+#### NPM Stuffs
+
+When you're ready to publish your component to **npm**, follow this checklist and then follow the normal steps to publish an npm module:
+
+- add any npm modules you want as peer dependencies to the `external` array in `rollup.config.js`
+
+```bash
+# note this will build `commonjs` and `es`versions of your module to dist/
+npm publish
+```
+
+#### Github Pages
+
+And finally, we recommend deploying your example to github pages so your users can quickly play around with a live version of your library before installing it.
+
+Deploying to github pages is simple. We create a production build of our example `create-react-app` that showcases your library and then run `gh-pages` to deploy the resulting bundle. This can be done as follows:
+
+```bash
+npm run deploy
+```
+
+Note that it's important for your `example/package.json` to have the correct `homepage` property set, as `create-react-app` uses this value as a prefix for resolving static asset URLs.
+
+## Example Module
 
 Here is an example react module created from this guide: [react-background-slideshow](https://github.com/transitive-bullshit/react-background-slideshow), a sexy tiled background slideshow for React. It comes with an example create-react-app hosted on github pages and should give you a good idea of the type of module you’ll be able to create starting from this boilerplate.
 
