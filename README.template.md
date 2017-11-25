@@ -12,7 +12,7 @@ npm install --save react-modern-library-boilerplate
 
 ## Usage
 
-```js
+```jsx
 import React, { Component } from 'react'
 
 import MyComponent from 'react-modern-library-component'
