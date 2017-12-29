@@ -26,6 +26,7 @@ There are some existing React library boilerplates, but none of them fulfilled t
 - Allow the use of `npm` modules within your library, either as dependencies or peer-dependencies
 - Support importing CSS in your module
   - Note that CSS support will be a noop if you're using css-in-js
+- Testing with [Jest](https://facebook.github.io/jest/), using `react-scripts` from `create-react-app`
 - Thorough documentation written by someone who cares :heart_eyes:
 
 ## Walkthrough
