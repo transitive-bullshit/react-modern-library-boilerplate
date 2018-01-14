@@ -24,7 +24,7 @@ There are some existing React library boilerplates, but none of them fulfilled t
 - Use [Rollup](https://rollupjs.org/) for build process and [Babel](https://babeljs.io/) for transpilation
   - See the [blog post](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7) for an explanation of Rollup vs Webpack
 - Allow the use of `npm` modules within your library, either as dependencies or peer-dependencies
-- Support importing CSS in your module
+- Support importing CSS in your components (with css modules enabled by default)
   - Note that CSS support will be a noop if you're using css-in-js
 - Testing with [Jest](https://facebook.github.io/jest/), using `react-scripts` from `create-react-app`
 - Thorough documentation written by someone who cares :heart_eyes:

@@ -5,7 +5,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import './styles.css'
+import styles from './styles.css'
 
 export default class ExampleComponent extends Component {
   static propTypes = {
@@ -18,7 +18,7 @@ export default class ExampleComponent extends Component {
     } = this.props
 
     return (
-      <div className='test'>
+      <div className={styles.test}>
         Example Component: {text}
       </div>
     )
