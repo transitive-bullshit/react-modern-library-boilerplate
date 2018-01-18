@@ -23,7 +23,9 @@ export default {
     'prop-types'
   ],
   plugins: [
-    postcss({}),
+    postcss({
+      modules: true
+    }),
     babel({
       exclude: 'node_modules/**'
     }),
