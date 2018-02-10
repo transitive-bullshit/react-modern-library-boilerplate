@@ -1,26 +1,11 @@
-/**
- * @class ExampleComponent
- */
+import Foo from './Foo'
+import Bar from './Bar'
 
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
+// export Foo and Bar as named exports
+export {
+  Foo,
+  Bar
 }
+
+// alternative, more concise syntax for named exports
+// export { default as Foo } from './Foo'
