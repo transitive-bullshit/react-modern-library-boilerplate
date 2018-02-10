@@ -80,7 +80,9 @@ Now, anytime you make a change to your component in `src/` or to the example app
 
 #### NPM Stuffs
 
-The only difference when publishing your component to **npm** is to make sure you add any npm modules you want as peer dependencies to the `external` array in `rollup.config.js`. Then publish as per usual.
+The only difference when publishing your component to **npm** is to make sure you add any npm modules you want as peer dependencies are properly marked as `peerDependencies` in `package.json`. The rollup config will automatically recognize them as peer dependencies and not try to bundle them in your module.
+
+Then publish as per usual.
 
 ```bash
 # note this will build `commonjs` and `es`versions of your module to dist/
@@ -97,9 +99,17 @@ npm run deploy
 
 Note that it's important for your `example/package.json` to have the correct `homepage` property set, as `create-react-app` uses this value as a prefix for resolving static asset URLs.
 
-## Example Module
+## Examples
 
 Here is an example react module created from this guide: [react-background-slideshow](https://github.com/transitive-bullshit/react-background-slideshow), a sexy tiled background slideshow for React. It comes with an example create-react-app hosted on github pages and should give you a good idea of the type of module you’ll be able to create starting from this boilerplate.
+
+### Multiple Named Exports
+
+Here is a [branch](https://github.com/transitive-bullshit/react-modern-library-boilerplate/tree/feature/multiple-exports) which demonstrates how to create a module with multiple named exports. The module in this branch exports two components, `Foo` and `Bar`, and shows how to use them from the example app.
+
+### Material-UI
+
+Here is a [branch](https://github.com/transitive-bullshit/react-modern-library-boilerplate/tree/feature/material-ui) which demonstrates how to create a module that makes use of a relatively complicated peer dependency, [material-ui](https://github.com/mui-org/material-ui). It shows the power of [rollup-plugin-peer-deps-external](https://www.npmjs.com/package/rollup-plugin-peer-deps-external) which makes it a breeze to create reusable modules that include complicated material-ui subcomponents without having them bundled as a part of your module.
 
 ## License
 
