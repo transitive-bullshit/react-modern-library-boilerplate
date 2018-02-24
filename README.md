@@ -27,6 +27,7 @@ There are some existing React library boilerplates, but none of them fulfilled t
 - Support importing CSS in your components (with css modules enabled by default)
   - Note that CSS support will be a noop if you're using css-in-js
 - Testing with [Jest](https://facebook.github.io/jest/), using `react-scripts` from `create-react-app`
+- Sourcemap creation enabled by default
 - Thorough documentation written by someone who cares :heart_eyes:
 
 ## Walkthrough
