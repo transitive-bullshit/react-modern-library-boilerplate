@@ -31,9 +31,9 @@ There are some existing React library boilerplates, but none of them fulfilled t
 - Sourcemap creation enabled by default
 - Thorough documentation written by someone who cares :heart_eyes:
 
-## Usage
+## Manual Setup
 
-If you'd prefer to setup a new module manually, check out the introductory [blog post](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7) and the old [manual guide](https://raw.githubusercontent.com/transitive-bullshit/react-modern-library-boilerplate/master/manual.md).
+If you'd prefer to setup a new module manually, check out the introductory [blog post](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7) and the old [manual guide](https://github.com/transitive-bullshit/react-modern-library-boilerplate/blob/master/manual.md).
 
 ## Examples
 
