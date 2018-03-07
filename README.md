@@ -1,6 +1,6 @@
 # react-modern-library-boilerplate
 
-> Boilerplate and [CLI](https://github.com/transitive-bullshit/react-modern-library-cli) for publishing modern React modules with Rollup and example usage via create-react-app.
+> Boilerplate and CLI [create-react-library](https://github.com/transitive-bullshit/create-react-library) for publishing modern React modules with Rollup and example usage via create-react-app.
 
 [![NPM](https://img.shields.io/npm/v/react-modern-library-boilerplate.svg)](https://www.npmjs.com/package/react-modern-library-boilerplate) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -8,7 +8,7 @@
 
 *Note*: Modern means modern as of March, 2018.. I'm sure everything will change in a month... :joy: :joy:
 
-We strongly recommend that you use the accompanying [CLI](https://github.com/transitive-bullshit/react-modern-library-cli) to create new modules based off of this boilerplate.
+We strongly recommend that you use the accompanying CLI [create-react-library](https://github.com/transitive-bullshit/create-react-library) to create new modules based off of this boilerplate.
 
 **The purpose of this boilerplate is to make publishing your own React components as simple as possible.**
 
@@ -16,7 +16,7 @@ We strongly recommend that you use the accompanying [CLI](https://github.com/tra
 
 There are some existing React library boilerplates, but none of them fulfilled the following goals which we set out to accomplish:
 
-- Comes with an easy-to-use [CLI](https://github.com/transitive-bullshit/react-modern-library-cli) for creating new modules
+- Comes with an easy-to-use CLI [create-react-library](https://github.com/transitive-bullshit/create-react-library) for creating new modules
 - Support all modern JS language features for component development out of the box
 - Build process to convert source to `umd` and `es` module formats for publishing to npm
 - Comes with an `example` app using a standard [create-react-app](https://github.com/facebookincubator/create-react-app), serving 2 purposes

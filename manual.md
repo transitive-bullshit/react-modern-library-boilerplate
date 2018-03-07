@@ -1,6 +1,6 @@
 ## Walkthrough
 
-This guide is for people who don't want to use the accompanying [CLI](https://github.com/transitive-bullshit/react-modern-library-cli).
+This guide is for people who don't want to use the accompanying CLI [create-react-library](https://github.com/transitive-bullshit/create-react-library).
 
 Check out the accompanying [blog post](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7) which gives more in-depth explanations on how to create an example component using this boilerplate.
 
