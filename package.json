@@ -19,7 +19,9 @@
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "create-react-library": "^2.1.0"
+  },
   "peerDependencies": {
     "prop-types": "^15.5.4",
     "react": "^0.14.9 || ^15.0.0 || ^16.0.0",
@@ -33,6 +35,9 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "gh-pages": "^1.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "^1.1.1",
     "rollup": "^0.54.0",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.2.1",
