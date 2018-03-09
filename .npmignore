@@ -1,0 +1,23 @@
+
+example
+src
+CODE_OF_CONDUCT.md
+
+#tests
+test
+coverage
+
+#build tools
+.travis.yml
+.jenkins.yml
+.codeclimate.yml
+
+#linters
+.jscsrc
+.jshintrc
+.eslintrc*
+.babelrc
+
+#editor settings
+.idea
+.editorconfig

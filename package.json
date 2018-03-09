@@ -19,7 +19,6 @@
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },
-  "dependencies": {},
   "peerDependencies": {
     "prop-types": "^15.5.4",
     "react": "^0.14.9 || ^15.0.0 || ^16.0.0",
@@ -38,7 +37,21 @@
     "rollup-plugin-commonjs": "^8.2.1",
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-peer-deps-external": "^2.0.0",
-    "rollup-plugin-postcss": "^1.1.0"
+    "rollup-plugin-postcss": "^1.1.0",
+    "eslint-config-xo-react": "^0.10.0",
+    "eslint-config-xo-space": "^0.15.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "jasmine": true
+    },
+    "extends": [
+      "xo-react/space",
+      "xo-space/esnext"
+    ],
+    "parser": "babel-eslint"
   },
   "files": [
     "dist"
