@@ -6,10 +6,10 @@
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.4.4",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-modern-library-boilerplate": "^1.0.0",
-    "react-scripts": "1.0.13"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-modern-library-boilerplate": "*",
+    "react-scripts": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
