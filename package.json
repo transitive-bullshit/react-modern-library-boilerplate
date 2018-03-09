@@ -12,7 +12,7 @@
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "scripts": {
-    "test": "react-scripts test --env=jsdom",
+    "test": "CI=1 react-scripts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepublish": "npm run build",
