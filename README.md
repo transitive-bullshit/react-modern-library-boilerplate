@@ -20,7 +20,7 @@ We strongly recommend that you use the accompanying CLI [create-react-library](h
 - [create-react-app](https://github.com/facebookincubator/create-react-app) for example usage and local dev
 - [Rollup](https://rollupjs.org/) for build process
 - [Babel](https://babeljs.io/) for transpilation
-- [Jest](https://facebook.github.io/jest/) testing
+- [Jest](https://facebook.github.io/jest/) for testing
 - Supports complicated peer-dependencies
 - Supports CSS modules
 - Sourcemap creation
