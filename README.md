@@ -14,22 +14,17 @@ We strongly recommend that you use the accompanying CLI [create-react-library](h
 
 ## Features
 
-There are some existing React library boilerplates, but none of them fulfilled the following goals which we set out to accomplish:
-
-- Comes with an easy-to-use CLI [create-react-library](https://github.com/transitive-bullshit/create-react-library) for creating new modules
-- Support all modern JS language features for component development out of the box
-- Build process to convert source to `umd` and `es` module formats for publishing to npm
-- Comes with an `example` app using a standard [create-react-app](https://github.com/facebookincubator/create-react-app), serving 2 purposes
-  - Local, hot-reload server for developing your module
-  - Easily publishable to github pages so users can quickly play with your module
-- Use [Rollup](https://rollupjs.org/) for build process and [Babel](https://babeljs.io/) for transpilation
-  - See the [blog post](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7) for an explanation of Rollup vs Webpack
-- Allow the use of `npm` modules within your library, either as dependencies or peer-dependencies
-- Support importing CSS in your components (with css modules enabled by default)
-  - Note that CSS support will be a noop if you're using css-in-js
-- Testing with [Jest](https://facebook.github.io/jest/), using `react-scripts` from `create-react-app`
-- Sourcemap creation enabled by default
-- Thorough documentation written by someone who cares :heart_eyes:
+- Easy-to-use CLI [create-react-library](https://github.com/transitive-bullshit/create-react-library)
+- Transpiles all modern JS features
+- Bundles `umd` and `es` module formats
+- [create-react-app](https://github.com/facebookincubator/create-react-app) for example usage and local dev
+- [Rollup](https://rollupjs.org/) for build process
+- [Babel](https://babeljs.io/) for transpilation
+- [Jest](https://facebook.github.io/jest/) testing
+- Supports complicated peer-dependencies
+- Supports CSS modules
+- Sourcemap creation
+- Thorough documentation :heart_eyes:
 
 ## Manual Setup
 
