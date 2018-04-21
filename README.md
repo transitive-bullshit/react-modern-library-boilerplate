@@ -16,7 +16,7 @@ We strongly recommend that you use the accompanying CLI [create-react-library](h
 
 - Easy-to-use CLI [create-react-library](https://github.com/transitive-bullshit/create-react-library)
 - Transpiles all modern JS features
-- Bundles `umd` and `es` module formats
+- Bundles `cjs` and `es` module formats
 - [create-react-app](https://github.com/facebookincubator/create-react-app) for example usage and local dev
 - [Rollup](https://rollupjs.org/) for build process
 - [Babel](https://babeljs.io/) for transpilation
