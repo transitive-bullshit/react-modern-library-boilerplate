@@ -4,10 +4,7 @@
   "description": "Boilerplate for publishing modern React modules with Rollup",
   "author": "Travis Fischer",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:transitive-bullshit/react-modern-library-boilerplate.git"
-  },
+  "repository": "transitive-bullshit/react-modern-library-boilerplate",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
