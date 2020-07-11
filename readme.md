@@ -45,3 +45,5 @@ Here is a [branch](https://github.com/transitive-bullshit/react-modern-library-b
 ## License
 
 MIT © [Travis Fischer](https://github.com/transitive-bullshit)
+
+Support my OSS work by <a href="https://twitter.com/transitive_bs">following me on twitter <img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>
